@@ -10,6 +10,7 @@ public class moveObjectScript : MonoBehaviour {
     //speed
     public Vector2 speed = new Vector2(10, 10);
 
+    private Rigidbody2D rb;
 
     //direction
     public Vector2 direction = new Vector2(-1, 0);
@@ -18,8 +19,8 @@ public class moveObjectScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        rb = GetComponent<Rigidbody2D>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -30,8 +31,8 @@ public class moveObjectScript : MonoBehaviour {
     }
 
     void FixedUpdate() {
-        // Application du mouvement
-        rigidbody2D.velocity = movement;
+        //move
+        rb.velocity = movement;
     }
 
 }

@@ -9,7 +9,7 @@ public class playerMoves : MonoBehaviour {
     //0 - controls
     public string xAxis = "Horizontal";
     public string yAxis = "Vertical";
-    
+
 
     //1 - speed
     public Vector2 speed = new Vector2(50, 50);
@@ -38,12 +38,20 @@ public class playerMoves : MonoBehaviour {
             speed.x * inputX,
             speed.y * inputY);
 
+        /*
+        //shoot
+        bool shoot = Input.GetButtonDown(fire);
+        if (shoot) {
+            weaponScript weapon = GetComponentInChildren<weaponScript>();
+            if (weapon != null) {
+                // false : player isn't in team 1
+                weapon.Attack(false);
+            }
+        }
+        */
     }
 
-
-    void FixedUpdate()
-    {
-        //Movement
+    void FixedUpdate() {
         rb.velocity = movement;
     }
 }
