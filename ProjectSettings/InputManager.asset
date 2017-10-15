@@ -41,8 +41,8 @@ InputManager:
     m_Name: player3Horizontal
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: q
-    positiveButton: d
+    negativeButton: x
+    positiveButton: v
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -105,8 +105,8 @@ InputManager:
     m_Name: player3Vertical
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: s
-    positiveButton: z
+    negativeButton: c
+    positiveButton: d
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
