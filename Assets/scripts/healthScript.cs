@@ -53,12 +53,14 @@ public class healthScript : MonoBehaviour {
         */
         if (gameObject.name == "player1coins" && collider.gameObject.name == "player2attack")
         {
+            soundEffectScript.Instance.MakeSwordSound();
             takeHealthOff();
             collider.gameObject.GetComponent<playerInfo>().kills += 1;
 
         }
         if (gameObject.name == "player2coins" && collider.gameObject.name == "player1attack")
         {
+            soundEffectScript.Instance.MakeSwordSound();
             takeHealthOff();
             collider.gameObject.GetComponent<playerInfo>().kills += 1;
 
@@ -71,6 +73,7 @@ public class healthScript : MonoBehaviour {
     {
         shotScript shot = collider.gameObject.GetComponent<shotScript>();
         if (shot != null){
+            soundEffectScript.Instance.MakeExplosionSound();
             // same/other  team
             if (shot.team != team){
                 takeHealthOff();

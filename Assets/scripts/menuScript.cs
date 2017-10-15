@@ -22,7 +22,6 @@ public class menuScript : MonoBehaviour {
 
     void load()
     {
-        print("hell");
         SceneManager.LoadScene(NameScene);
         
     }
