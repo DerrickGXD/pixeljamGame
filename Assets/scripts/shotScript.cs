@@ -24,4 +24,9 @@ public class shotScript : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnDestroy()
+    {
+        SpecialEffectsHelper.Instance.Explosion(transform.position);
+    }
 }

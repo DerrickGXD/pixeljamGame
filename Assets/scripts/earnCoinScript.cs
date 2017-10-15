@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Threading;
 
 public class earnCoinScript : MonoBehaviour {
 
@@ -26,8 +27,17 @@ public class earnCoinScript : MonoBehaviour {
         coinScript coin = collider.gameObject.GetComponent<coinScript>();
         if (coin != null) {
             _gm_.addScore(team, coin.value);
-            // destroy the coin
-            Destroy(coin.gameObject);
+            StartCoroutine(CoinCoRoutine(coin));
         }
+    }
+
+    private IEnumerator CoinCoRoutine(coinScript coin)
+    {
+        // destroy the coin
+        coin.gameObject.SetActive(false);
+        yield return new WaitForSeconds(4);
+        SpecialEffectsHelper.Instance.NewCoin(coin.gameObject.transform.position);
+        yield return new WaitForSeconds(0.2f);
+        coin.gameObject.SetActive(true);
     }
 }

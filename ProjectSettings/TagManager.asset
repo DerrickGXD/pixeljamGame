@@ -6,6 +6,11 @@ TagManager:
   tags:
   - scoreTeam1
   - scoreTeam2
+  - disappear1
+  - respawnTeam1
+  - respawnTeam2
+  - Team1
+  - Team2
   layers:
   - Default
   - TransparentFX
@@ -15,10 +20,10 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - respawnTeam1
+  - respawnTeam2
+  - Team1
+  - Team2
   - 
   - 
   - 

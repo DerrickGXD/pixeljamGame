@@ -78,6 +78,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\blockDisapear.cs" />
     <Compile Include="Assets\scripts\blockScript.cs" />
     <Compile Include="Assets\scripts\coinScript.cs" />
     <Compile Include="Assets\scripts\earnCoinScript.cs" />
@@ -87,6 +88,7 @@
     <Compile Include="Assets\scripts\playerInfo.cs" />
     <Compile Include="Assets\scripts\playerMoves.cs" />
     <Compile Include="Assets\scripts\shotScript.cs" />
+    <Compile Include="Assets\scripts\SpecialEffectsHelper.cs" />
     <Compile Include="Assets\scripts\trapShooting.cs" />
     <Compile Include="Assets\scripts\weaponScript.cs" />
   </ItemGroup>
