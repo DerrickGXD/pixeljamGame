@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class coinScript : MonoBehaviour {
-    public float value = 1;
+    public int value = 1;
     // Use this for initialization
     void Start () {
 		

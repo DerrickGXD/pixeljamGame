@@ -11,6 +11,18 @@ TagManager:
   - respawnTeam2
   - Team1
   - Team2
+  - Time
+  - shot
+  - Ghost1Kill
+  - Ghost1Death
+  - Ghost2Gold
+  - Ghost2Death
+  - Pumpkin1Kill
+  - Pumpkin1Death
+  - Pumpkin2Death
+  - Pumpkin2Gold
+  - TimeOutMessage
+  - trap
   layers:
   - Default
   - TransparentFX

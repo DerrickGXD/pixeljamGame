@@ -32,7 +32,9 @@ public class healthScript : MonoBehaviour {
         {
             // destroy it self if no more health points !
             gameObject.transform.position = new Vector2(begin_x, begin_y);
-            _gm_.addScore(team, -1f);
+            _gm_.addScore(team, -1);
+            gameObject.GetComponent<playerInfo>().death += 1;
+
         }
     }
 
@@ -52,11 +54,14 @@ public class healthScript : MonoBehaviour {
         if (gameObject.name == "player1coins" && collider.gameObject.name == "player2attack")
         {
             takeHealthOff();
+            collider.gameObject.GetComponent<playerInfo>().kills += 1;
 
         }
         if (gameObject.name == "player2coins" && collider.gameObject.name == "player1attack")
         {
             takeHealthOff();
+            collider.gameObject.GetComponent<playerInfo>().kills += 1;
+
         }
     }
 
@@ -68,15 +73,7 @@ public class healthScript : MonoBehaviour {
         if (shot != null){
             // same/other  team
             if (shot.team != team){
-                hp -= shot.damage;
-                // destroy the shot
-                Destroy(shot.gameObject);
-
-                if (hp <= 0){
-                    // destroy it self if no more health points !
-                    gameObject.transform.position = new Vector2(begin_x, begin_y);
-                    _gm_.addScore(team, -1f);
-                }
+                takeHealthOff();
             }
         }
         
