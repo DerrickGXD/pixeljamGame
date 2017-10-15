@@ -25,8 +25,8 @@ InputManager:
     m_Name: player2Horizontal
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: h
-    positiveButton: k
+    negativeButton: j
+    positiveButton: l
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -41,8 +41,8 @@ InputManager:
     m_Name: player3Horizontal
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: c
-    positiveButton: b
+    negativeButton: q
+    positiveButton: d
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -57,8 +57,8 @@ InputManager:
     m_Name: player4Horizontal
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: q
-    positiveButton: d
+    negativeButton: f
+    positiveButton: h
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -89,8 +89,8 @@ InputManager:
     m_Name: player2Vertical
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: j
-    positiveButton: u
+    negativeButton: k
+    positiveButton: i
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -105,8 +105,8 @@ InputManager:
     m_Name: player3Vertical
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: v
-    positiveButton: f
+    negativeButton: s
+    positiveButton: z
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
@@ -121,8 +121,8 @@ InputManager:
     m_Name: player4Vertical
     descriptiveName: 
     descriptiveNegativeName: 
-    negativeButton: s
-    positiveButton: z
+    negativeButton: g
+    positiveButton: t
     altNegativeButton: 
     altPositiveButton: 
     gravity: 3
